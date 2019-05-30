@@ -1,0 +1,39 @@
+/* pages/person/aboutus/aboutus.wxss */
+.page{
+  background-color: #dbdada;
+}
+.total {
+  width: 100%;
+  height:100%;
+  position: absolute;
+  background-size: 100%;
+  background-color: #dbdada;
+  background-repeat: no-repeat;
+  background-position:0px -100px;
+}
+
+.textcontain{
+   width: 100%;
+   margin:15px 0%;
+   height:90%;
+  background-size: 190%;
+  background-repeat: no-repeat;
+  background-position:-325rpx -180rpx;
+  display: flex;
+        flex-wrap: wrap;
+
+}
+
+.aboutus
+{
+  width:100%;
+  margin:255rpx 110rpx;
+  line-height: 59rpx;
+  font-size: 32rpx;
+  text-indent:2em;
+    text-align: left;
+    letter-spacing:5rpx;
+}
+.second{
+  text-indent:2em;
+}

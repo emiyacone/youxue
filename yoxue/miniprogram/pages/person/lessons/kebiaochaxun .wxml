@@ -1,0 +1,12 @@
+ 
+ <view style='width:100%；text-align:center'>
+ <picker mode='selector' bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}"  > 
+            <text >{{xueyuan}}</text>
+</picker>
+</view>
+ <view style='width:100%；text-align:center'>
+ <picker mode='selector' bindchange="bindPickerChange2" value="{{index2}}" range="{{array2}}"  range-key='cname'> 
+            <text >{{banji}}</text>
+</picker>
+</view>
+<button bindtap='getkcb'>查询课程表</button>

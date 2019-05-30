@@ -1,0 +1,17 @@
+
+<view class='container' style="background-image:url({{backurl}})">
+<view class='total'>
+<view class='huanying'>欢迎来到游学教育</view>
+<view class='main'>
+<view class='question'>您的身份是?</view>
+<view class='choice'>
+<button class='bt b1' bindtap='tendtotea'>
+教师
+</button>
+<button class='bt b2' bindtap='tendtostu'>
+学生
+</button>
+</view>
+</view>
+</view>
+</view>

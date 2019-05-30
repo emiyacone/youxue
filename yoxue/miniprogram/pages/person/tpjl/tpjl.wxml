@@ -1,0 +1,17 @@
+
+<scroll-view scroll-y="true" class="container notify withtab" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  <view class="ctnt0" hidden="{{currentNavtab==0 ? '' : true}}">
+    <view class="notify-item flex-wrp" wx:for="{{tongzhis}}">
+      <view class="notify-content flex-item">
+        <text class="notify-source">投票名称:{{item.title}}</text>
+        <text class="notify-title">投票结果:{{item.message}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="ctnt1 placehold" hidden="{{currentNavtab==1 ? '' : true}}">
+    <text>赞与感谢</text>
+  </view>
+  <view class="ctnt2 placehold" hidden="{{currentNavtab==2 ? '' : true}}">
+    <text>关注</text>
+  </view>
+</scroll-view>

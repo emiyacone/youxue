@@ -1,0 +1,40 @@
+<view class='total' style="background-image:url({{backurl}})">
+  <view class='recourses' >
+    <view class='types'>
+      <view class='classcourse' bindtap='changeclass' style='background-color:white;color:{{classcolor}}; border-bottom: 10rpx solid {{classback}};'>
+        <text class='title' >班级课程</text>
+      </view>
+      <view class='onlinecourse' bindtap='changeonline' style='background-color:white;color:{{onlinecolor}};border-bottom: 10rpx solid {{onlineback}};'>
+        <text class='title'>线上课程</text>
+      </view>
+    </view>
+    <view class='course1' wx:for="{{courses}}" id='{{item.cid}}'hidden='{{classhide}}' bindtap='{{item.coursedetail}}'>
+      <image src='{{item.imageurl}}'></image>
+      <view>
+      <view class='coursetitle1'>{{item.name}}</view>
+      <view class='price1'>课程码:{{item.classcode}}</view>
+      </view>
+    </view>
+       <button bindtap='jiarukecheng' class='bt_j' hidden='{{classhide}}'>{{way}}</button>
+
+
+      <view class='course' wx:for="{{onlinecourses}}"id='{{item.id}}' hidden='{{onlinehide}}' bindtap='{{item.coursedetail}}'>
+      <image src='{{item.imageurl}}'></image>
+      <view class='coursetitle'>{{item.title}}</view>
+      <view class='price'></view>
+    </view>
+    
+    <!-- <view class='pagesdiv'>
+    <view class='numbers'>
+    <view class='pagenumber'>1</view>
+       <view class='pagenumber'>2</view>
+    </view>
+    </view> -->
+  </view>
+</view>
+
+<view class="bg" style='display:{{choosehide}}' bindtap='changebackground'></view>
+<view class="show" style='display:{{choosehide}}'>
+<input class='showinput' placeholder='{{cjkecheng}}' bindinput='getkcname'></input>
+<button class='editm' bindtap='{{tendto}}'>{{action}}</button>
+</view>

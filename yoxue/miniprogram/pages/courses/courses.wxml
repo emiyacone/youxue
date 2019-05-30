@@ -1,0 +1,40 @@
+<view class='border' style="background-image:url({{searchbackurl}})">
+  <view class='borderline'>
+    <view class='bordertitle' bindtap='todetail'>
+      <text>{{title}}</text>
+    </view>
+    <input />
+    <image src='{{searchurl}}'></image>
+  </view>
+</view>
+
+<view class='recourses' hidden='{{coursehide}}'>
+  <view class='course' wx:for="{{courses}}" bindtap='{{item.coursedetail}}' id='{{item.id}}'>
+    <image src='{{item.imageurl}}'></image>
+    <view class='coursetitle'>{{item.title}}</view>
+    <view class='apprise'>
+      <view class='star'>
+        <image id='1' src='{{sstar1}}'></image>
+        <image id='2' src='{{sstar2}}'></image>
+        <image id='3' src='{{sstar3}}'></image>
+        <image id='4' src='{{sstar4}}'></image>
+        <image id='4' src='{{sstar5}}'></image>
+      </view>
+      <text>{{item.star}}</text>
+      <text class='personnum'>{{item.personnum}}人学过</text>
+    </view>
+    <view class='price'></view>
+  </view>
+</view>
+
+
+<view class='typecontain' hidden='{{typehide}}'>
+<view class='typedivide'  wx:for="{{types}}" bindtap='getfresh'>
+  <view class='type' >
+   <image src='{{item.url}}' class='typeimage'/>
+   <text>{{item.name}}</text>
+   <view>></view>
+  </view>
+  <view class='divline'></view>
+  </view>
+</view>

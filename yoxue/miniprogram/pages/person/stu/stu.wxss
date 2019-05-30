@@ -1,0 +1,9 @@
+.courses{
+  width: 100%;
+
+  border-bottom: 1rpx solid #ddd;
+}
+
+.courseitem{
+    margin:30rpx 20rpx;
+}

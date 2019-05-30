@@ -1,0 +1,31 @@
+
+<view class='total' style="background-image:url({{backurl}})">
+<view class='main'>
+<view class='title'>请选择充值金额</view>
+<view class='money'>
+<view class='moneytype' wx:for="{{moneys}}" bindtap='changecolor' id='{{item.id}}' style='border:1rpx solid {{item.bordercolor}}'>
+<view class='yuabao' style='color:{{item.color}}'>{{item.money}}元宝</view>
+<view class='month'>({{item.month}}个月)</view>
+</view>
+</view>
+<view class='payway'>
+<view class='paytitle'>支付方式</view>
+ <radio-group class="radio-group" bindchange="radioChange">
+              <label class="paytitler" >
+                 <image class='tipimage' src='../images/zfb.png'/> <view style='margin-left:10rpx;width:80%;'>支付宝</view><radio value="" checked=""/>
+              </label>
+              <label class="paytitler" >
+                   <image class='tipimage' src='../images/wx.png'/><view style='margin-left:10rpx;width:80%;'>微信</view><radio value="" checked=""/>
+              </label>
+          </radio-group>
+</view>
+<view class='je'>支付金额:{{money}}元</view>
+<button type='' class=''>确认</button>
+<view class='divline'></view>
+<view class='chongzhi'>
+<view class='cztitle'>充值说明:</view>
+<view class='cztip'>1.本次支付为虚拟服务,暂不支持退款，敬请谅解。</view>
+<view class='cztip'>2.选择充值金额后点击确认支付，可选择支付宝或微信支付。</view>
+</view>
+</view>
+</view>

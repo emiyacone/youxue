@@ -1,0 +1,10 @@
+<!--pages/person/aboutus/abasasdasdasoutus.wxml-->
+<view class='total' style="background-image:url({{backurl}})">
+  <view class='textcontain' style="background-image:url({{linebackurl}})">
+    <view class='aboutus'>
+    <text>游学教育是一套将传统学习与\n 移动设备相结合的在线学习互动系\n 统，满足了用户随时随地获取学习\n 源以及在学习过程中获得高品质\n 服务的迫切希望。\n </text>
+    <text class='second' decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们将不断丰富软件功能，为\n 用户提供更加流畅的交互体验、更\n 加新颖的在线互动。
+      </text>
+    </view>
+  </view>
+</view>

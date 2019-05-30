@@ -1,0 +1,81 @@
+/* pages/person/cjfx/cjfx.wxss */
+.title{
+  margin:20rpx 50rpx;
+}
+.fenxi{
+  margin:0rpx 50rpx;
+}
+
+.total{
+  width:100%;
+  height:100vh;
+    background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.top{
+  width:100%;
+  height:90rpx;
+  text-align: center;
+  padding-top: 20rpx;
+}
+
+.beny{
+  position: absolute;
+  top: 836rpx;
+  left:50rpx;
+  font-size: 28rpx;
+}
+
+.paiming{
+    position: absolute;
+  top: 836rpx;
+  left:450rpx;
+  font-size: 28rpx;
+}
+
+.shans{
+   position: absolute;
+  top: 879rpx;
+  left:540rpx;
+  font-size: 28rpx;
+}
+
+.zuigao{
+  position: absolute;
+  top: 1058rpx;
+  left:50rpx;
+  font-size: 28rpx;
+}
+
+.zuidi{
+  position: absolute;
+  top: 1065rpx;
+  left:420rpx;
+  font-size: 28rpx;
+}
+
+.gaole{
+   position: absolute;
+  top: 1106rpx;
+  left:538rpx;
+  font-size: 28rpx;
+}
+
+.score{
+  width: 89%;
+      position: absolute;
+  top: 960rpx;
+  left:3%;
+  font-size: 28rpx;
+  display: flex;
+  flex-direction:column;
+  border: 1rpx solid #ddd;
+  padding: 20rpx 20rpx 20rpx 20rpx;
+  background-color: #D97B3D;
+  border-radius: 10rpx 10rpx 10rpx 10rpx;
+}
+
+.ctitle{
+  font-size: 35rpx;
+}

@@ -1,0 +1,162 @@
+.border{
+  width:94%;
+  height:60px;
+  margin:10px 3%;
+    background-size: 100%;
+      background-repeat: no-repeat;
+}
+
+.borderline{
+  width:98%;
+  height:36px;
+  margin:7px 1%;
+  display: flex;
+  border-radius: 6px 6px 6px 6px;
+}
+
+.bordertitle{
+  width:17%;
+  height:36px;
+  margin-left:1%;
+  text-align: center;
+  border-radius: 6px 0px 0px 6px;
+  color:white;
+  font-size: 15px;
+  display:flex;
+}
+
+.bordertitle text{
+  margin:15px 5px;
+  width:100%;
+
+}
+
+.borderline input
+{
+  height:36px;
+  width:70%;
+  margin:7px 0px;
+}
+
+.borderline image
+{
+  margin:10px 0px;
+  width:25px;
+  height:32px;
+}
+
+
+.recourses {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.course {
+  width: 50%;
+}
+
+.course image {
+  width: 90%;
+  margin: 4px 5%;
+  border-radius: 5px 5px 5px 5px;
+  height: 125px;
+  border-top: 1rpx solid #ebebeb;
+  box-shadow: 0px 2px 2px 2px #ebebeb;
+}
+
+.coursetitle {
+  width: 90%;
+  margin: 5px 5%;
+  font-size: 17px;
+}
+
+
+.apprise {
+  width: 90%;
+  margin: 0px 5%;
+   font-size: 13px;
+   display:flex;
+   color:#8d8d8d;
+}
+
+.personnum{
+  width:70%;
+  margin-left:12px;
+}
+
+.price {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5px;
+  margin-bottom: 20px;
+   font-size: 17px;
+}
+
+.star{
+  display: flex;
+}
+
+.star image{
+  width:10px;
+  height:10px;
+  margin:4px 1px;
+  background-color: white;
+    border-top: 0rpx solid #ebebeb;
+    box-shadow: 0px 0px 0px 0px #ebebeb;
+}
+
+.typecontain{
+    width:94%;
+    margin-top: -20px;
+    margin-left:3%;
+    border:1px solid #fda92c;
+    border-radius: 5px 5px 5px 5px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.typeimage{
+  width:30px;
+  height:30px;
+  margin:0px 20px;
+}
+
+.type
+{
+  width:100%;
+  display:flex;
+  margin:12px 0px;
+  flex-wrap: wrap;
+}
+.type text{
+  font-size: 16px;
+  margin:5px 0px;
+  width:70%;
+}
+.divline{
+  width:100%;
+  height:15px;
+  background-color: #f4f4f4;
+}
+
+
+.typedivide{
+  width:100%;
+    display:flex;
+      flex-wrap: wrap;
+}
+
+.title{
+  width:100%;
+  text-align: center;
+  background: #ddd;
+  height: 80rpx;
+   display: flex;
+}
+
+
+.taol{
+  margin:12rpx auto;
+  width:30%;
+}

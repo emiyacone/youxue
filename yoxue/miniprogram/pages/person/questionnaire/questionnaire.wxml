@@ -1,0 +1,17 @@
+<view class="total">
+<view class='search'>
+<view class="searchlogo">
+<image src='../../images/searchglass.png'></image>
+<input class='searchfont' placeholder='搜索问卷'></input>
+</view>
+</view>
+</view>
+<view class='divline'></view>
+<view class='wenjuanitem'  wx:for="{{wenjuans}}">
+<view class="wenjuantitle">{{item.title}}</view>
+<view  class="personnumber">{{item.personnumber}}</view>
+<view class="state">{{item.state}}</view>
+<view class="state">ID:{{item.id}}</view>
+<view>
+</view>
+</view>

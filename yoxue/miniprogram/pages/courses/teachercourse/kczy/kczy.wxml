@@ -1,0 +1,18 @@
+<view class='total'>
+<view class='ziyuan' wx:for='{{ziyuans}}' bindtap='getword' id='{{item.id}}'>
+<view class='contain'>
+<image class='tupian' src='{{item.background}}'>
+</image>
+<view class='title'>{{item.title}}</view>
+<view class='neirong'>
+<view class='name'>{{item.name}}</view>
+<view class='time'>
+<text class='sctime'>上传时间:</text>
+<text class='xstime'>{{item.time}}</text>
+</view>
+</view>
+</view>
+</view>
+</view>
+
+<view class='plusview'  bindtap='uploadfile'hidden='{{studenthide}}'><image class='plus' src='{{plus}}'></image></view>

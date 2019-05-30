@@ -1,0 +1,46 @@
+.course1 {
+  width: 94%;
+  margin:0rpx 3%;
+  margin-top: 40rpx;
+  display: flex;
+  border-radius: 10rpx 10rpx 10rpx 10rpx;
+  background-color: white;
+  border:1rpx solid #ddd;
+    box-shadow: 0px 2px 5px 5px #ebebeb;
+}
+.course1 image {
+  height: 130rpx;
+  width: 200rpx;
+  margin: 10px 2%;
+  border-radius: 5px 5px 5px 5px;
+  border-top: 1rpx solid #ebebeb;
+  box-shadow: 0px 2px 2px 2px #ebebeb;
+}
+.coursetitle1 {
+  width: 300rpx;
+  margin-top: 25rpx;
+  margin-left: 5%;
+  font-size: 33rpx;
+}
+.price1 {
+  width: 250rpx;
+  margin-left: 5%;
+  margin-top: 30rpx;
+  margin-bottom: 10rpx;
+  font-size: 28rpx;
+  color:#b3b3b3;
+}
+
+.jindut{
+  margin-top: 50rpx;
+}
+
+.continue{
+  width:200rpx;
+  height:70rpx;
+  font-size: 30rpx;
+  margin-top: 25rpx;
+  color: white;
+  background-color: #F6AA17;
+  margin-left: -50rpx;
+}

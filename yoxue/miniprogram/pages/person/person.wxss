@@ -1,0 +1,229 @@
+/* pages/person/person.wxss */
+button {
+  background-color: #fff;
+  border: none;
+line-height:1.5;
+  font-size: 13px;
+}
+
+button::after {
+  border: none;
+}
+.total {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  background-position:0px -100px;
+     background-color: #dbdada;
+}
+
+.person {
+  width: 92%;
+  height: 14vh;
+  margin: 5rpx  4%;
+  background-color: white;
+  border-radius: 5px 5px 5px 5px;
+  display: flex;
+  margin-top: 5rpx;
+}
+
+.headimage {
+   width: 90rpx;
+  height: 90rpx;
+  border-radius: 70px 70px 70px 70px;
+  margin: 40rpx 30rpx;
+}
+
+
+.headimage image {
+    width: 90rpx;
+  height: 90rpx;
+  border-radius: 70px 70px 70px 70px;
+}
+
+.edit {
+  margin: 0px 28rpx;
+  width: 46rpx;
+  height: 46rpx;
+}
+
+.student {
+  width: 80%;
+}
+
+.name {
+  width: 100%;
+  margin-top:30rpx;
+  display: flex;
+  font-weight: bold;
+}
+
+.role {
+  width: 40px;
+  height: 18px;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 5px 5px 5px 5px;
+  margin-top: 16rpx;
+  background-color: #fda92c;
+  color: white;
+}
+
+.coursemess {
+  width: 92%;
+  margin: 10rpx 4%;
+  background-color: white;
+  border-radius: 5px 5px 5px 5px;
+  display: flex;
+}
+
+.coursemain {
+  width: 92%;
+  height: 120rpx;
+  margin: 10rpx 4%;
+  background-color: white;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.coursenum {
+  width: 100%;
+  display: flex;
+}
+
+.num {
+  width: 50%;
+  margin: 10rpx 0px;
+  text-align: center;
+}
+
+.numtitle {
+  font-size: 24rpx;
+}
+
+.numsize {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.size{
+    font-size: 15px;
+    font-weight:100;
+    margin-left: 10rpx;
+}
+
+.week {
+  width: 100%;
+  display: flex;
+}
+
+.weekcircle {
+  width: 25px;
+  height: 50rpx;
+  border-radius: 25px 25px 25px 25px;
+  margin: 0px 14rpx;
+  border: 1px solid #cbd7d4;
+}
+
+.weekcontain {
+  width: 14%;
+  font-size: 20rpx;
+  color: #87a1b1;
+  text-align: center;
+}
+
+.livetitle {
+  width: 100%;
+  height: 60rpx;
+  display: flex;
+}
+
+.livetext {
+  width: 50%;
+  height: 20rpx;
+  font-size: 36rpx;
+  margin-top: 15rpx;
+  margin-left: 6%;
+  /* font-weight: bold; */
+}
+
+.mycourse {
+    width: 92%;
+  margin: 10rpx 4%;
+  background-color: white;
+  border-radius: 5px 5px 5px 5px;
+  padding-bottom: 5rpx;
+  padding-top: 5rpx;
+}
+
+.more {
+  width: 92%;
+  margin:5rpx  4%;
+  background-color: white;
+  border-radius: 5px 5px 5px 5px;
+  padding-bottom: 5rpx;
+    padding-top: 5rpx;
+}
+.cmain {
+  width: 88%;
+  margin: 10px 6%;
+  background-color: white;
+  border-radius: 5px 5px 5px 5px;
+  border-top: 1px solid #d5dfe7;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tipimage {
+  width: 30px;
+  height: 60rpx;
+}
+
+.tipcontain {
+  width: 33%;
+  font-size: 26rpx;
+  text-align: center;
+  margin: 20rpx 0px;
+}
+
+.bg {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.7;
+  opacity: 0.70;
+  filter: alpha(opacity=70);
+}
+
+.show {
+    border-radius: 10px 10px 10px 10px;
+  display: none;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  width: 30%;
+  padding: 8px;
+  border: 8px solid #e8e9f7;
+  background-color: white;
+  z-index: 1002;
+  overflow: auto;
+  text-align: center
+}
+
+.editm{
+  width:130rpx;
+  background-color:#D97B3D ;
+  margin-top: 20rpx;
+  color: white
+}
+
+
+

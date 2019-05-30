@@ -1,0 +1,30 @@
+<!--logs.wxml-->
+<view class="top-tab flex-wrp flex-tab">
+  <view class="toptab flex-item {{currentNavtab==idx ? 'active' : ''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{idx}}" bindtap="switchTab">
+    {{itemName}}
+  </view>
+</view>
+<scroll-view scroll-y="true" class="container notify withtab" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  <view class="ctnt0" hidden="{{currentNavtab==0 ? '' : true}}">
+    <view class="unread">
+      <text>0 条未读</text>
+      <image src="cloud://uploadimage-60d0e7.7570-uploadimage-60d0e7/allread.png"></image>
+    </view>
+
+    <view class="notify-item flex-wrp" wx:for="{{tongzhis}}">
+      <view class="avatar flex-item">
+        <image src="cloud://uploadimage-60d0e7.7570-uploadimage-60d0e7/icon1.jpeg"></image>
+      </view>
+      <view class="notify-content flex-item">
+        <text class="notify-source">{{item.title}}</text>
+        <text class="notify-title">{{item.message}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="ctnt1 placehold" hidden="{{currentNavtab==1 ? '' : true}}">
+    <text>赞与感谢</text>
+  </view>
+  <view class="ctnt2 placehold" hidden="{{currentNavtab==2 ? '' : true}}">
+    <text>关注</text>
+  </view>
+</scroll-view>

@@ -1,0 +1,173 @@
+.lunbo {
+  width: 100%;
+  height: 200px;
+}
+
+.lunbo image {
+  width: 100%;
+  height: 200px;
+}
+
+.search {
+  width: 100%;
+  height: 39px;
+  position: absolute;
+  top: 5px;
+  background-color: #fae2d6;
+  opacity: 0.5;
+  border-radius: 20px 20px 20px 20px;
+  display:flex;
+}
+
+.search image{
+width: 17px;
+  height: 21px;
+  margin: auto 2%;
+  margin-left: 4%;
+}
+
+
+.search input {
+  width: 80%;
+  margin: auto 0px;
+}
+
+.tips {
+  margin-top: 4px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+
+.tip {
+  width: 25%;
+  height: 100px;
+}
+
+.tipimage {
+  width: 64px;
+  margin: 5px 18%;
+  height: 64px;
+  border-radius: 45px 45px 45px 45px;
+  background-color: #fff;
+}
+
+.tipimage image {
+  width: 43px;
+  height: 43px;
+  margin: 10px 10px;
+  margin-bottom: 0rpx;
+}
+
+.tiptext {
+  width: 100%;
+  margin: 0px 3%;
+  color: #8d8d8d;
+  font-size: 15px;
+  text-align: center;
+  margin-top: -25rpx;
+}
+
+.divline {
+  width: 100%;
+  height: 6px;
+  background-color: #dbdada;
+}
+
+.livetv {
+  height: 160px;
+  width: 100%;
+    margin-bottom: 20rpx;
+}
+
+.livetv image {
+  width: 95%;
+  height: 125px;
+  margin-left:2.5%;
+
+}
+
+.livetitle {
+  width: 100%;
+  height: 35px;
+  display: flex;
+}
+
+.livetext {
+  width: 50%;
+  height: 10px;
+  font-size: 17px;
+  margin: 6px 10px;
+  font-weight: bold;
+}
+
+.more {
+  width: 50%;
+  text-align: right;
+  font-size: 15px;
+  margin: 6px 10px;
+  color: #8d8d8d;
+}
+
+.recommend {
+  width: 100%;
+}
+
+.recourses {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.course {
+  width: 50%;
+}
+
+.course image {
+  width: 90%;
+  margin: 4px 5%;
+  border-radius: 5px 5px 5px 5px;
+  height: 125px;
+  border-top: 1rpx solid #ebebeb;
+  box-shadow: 0px 2px 2px 2px #ebebeb;
+}
+
+.coursetitle {
+  width: 90%;
+  margin: 5px 5%;
+  font-size: 17px;
+}
+
+.apprise {
+  width: 90%;
+  margin: 0px 5%;
+   font-size: 13px;
+   display:flex;
+   color:#8d8d8d;
+}
+
+.personnum{
+  width:70%;
+  margin-left:12px;
+}
+
+.price {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5px;
+  margin-bottom: 20px;
+   font-size: 17px;
+}
+
+.star{
+  display: flex;
+}
+
+.star image{
+  width:10px;
+  height:10px;
+  margin:4px 1px;
+  background-color: white;
+    border-top: 0rpx solid #ebebeb;
+    box-shadow: 0px 0px 0px 0px #ebebeb;
+}

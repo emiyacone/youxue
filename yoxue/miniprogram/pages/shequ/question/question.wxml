@@ -1,0 +1,225 @@
+<!--question.wxml-->
+<view class="container">
+    <view class="question-wrp">
+        <view class="question-item">
+            <view class="que-tag">
+                <text class="tag">阅读</text>
+                <text class="tag">电子书</text>
+                <text class="tag">Kindle</text>
+                <text class="tag">书籍</text>
+                <text class="tag">文学</text>
+            </view>
+            <view class="que-title">
+                怎样才能要不断加强学习，提高学习能力？
+            </view>
+            <view class="que-content">
+                WEB前端*不靠谱天气预报员*想做代码小仙女
+            </view>
+            <view class="que-follow">
+                <view class="left">
+                    <view class="watch">
+                        <image src="cloud://uploadimage-60d0e7.7570-uploadimage-60d0e7/eye.png"></image>
+                        <text>3316</text>
+                    </view>
+                    <view class="comment">
+                        <image src="cloud://uploadimage-60d0e7.7570-uploadimage-60d0e7/comment2.png"></image>
+                        <text>27</text>
+                    </view>
+                </view>
+                <!-- <view class="right">
+                    关注
+                </view> -->
+            </view>
+        </view>
+        <view class="que-operate flex-wrp">
+            <view class="invite flex-item">
+                <image src="cloud://uploadimage-60d0e7.7570-uploadimage-60d0e7/invite.png"></image>
+                <text>邀请回答</text>
+            </view>
+            <view class="write flex-item">
+                <image src="cloud://uploadimage-60d0e7.7570-uploadimage-60d0e7/write.png"></image>
+                <text>写回答</text>
+            </view>
+        </view>
+    </view>
+    <view class="answer-feed">
+        <view  bindtap="bindItemTap" class="feed-item">
+            <view class="feed-source">
+                <a class="" bindTap="">
+                    <view class="avatar">
+                        <image src="cloud://uploadimage-60d0e7.7570-uploadimage-60d0e7/icon1.jpeg"></image>
+                    </view>
+                    <text>Rebecca</text>
+                </a>
+            </view>
+            <view class="feed-content">
+                <view class="answer-body">
+                    <view>
+                        <text class="answer-txt">难道不明白纸质书更贵啊！！！ 若觉得kindle更贵，我觉得要么阅读量太少，那确实没有买kindle的必要。要么买的都是盗版的纸质书？我不清楚不加以评论。。。 另外，用kindle看小说的... </text>
+                    </view>
+                    <view class="answer-actions">
+                        <view class="like dot">
+                            <a>3.9K 赞同 </a>
+                        </view>
+                        <view class="comments dot">
+                            <a>254 评论 </a>
+                        </view>
+                        <view class="time">
+                            <a>2 个月前</a>
+                        </view>
+
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view  bindtap="bindItemTap" class="feed-item">
+            <view class="feed-source">
+                <a class="" bindTap="">
+                    <view class="avatar">
+                        <image src="cloud://uploadimage-60d0e7.7570-uploadimage-60d0e7/icon9.jpeg"></image>
+                    </view>
+                    <text>emiya</text>
+                </a>
+            </view>
+            <view class="feed-content">
+                <view class="answer-body">
+                    <view>
+                        <text class="answer-txt">其实纸质书有纸质书的优点，而Kindle也是一个对现在没有什么时间和精力去看纸质书的另一种选择。</text>
+                    </view>
+                    <view class="answer-actions">
+                        <view class="like dot">
+                            <a>3.9K 赞同 </a>
+                        </view>
+                        <view class="comments dot">
+                            <a>254 评论 </a>
+                        </view>
+                        <view class="time">
+                            <a>2 个月前</a>
+                        </view>
+
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view  bindtap="bindItemTap" class="feed-item">
+            <view class="feed-source">
+                <a class="" bindTap="">
+                    <view class="avatar">
+                        <image src="https://wx.qlogo.cn/mmopen/vi_32/zHU4fm1b8fbDgfDc8COqYBeaCvcZ5XhDXm1NwUlfenlcEVeR3BMXJVTHSuUm2rzlc0zlEqa6IO1IexFyML3x0A/132"></image>
+                    </view>
+                    <text>无名小姐</text>
+                </a>
+            </view>
+            <view class="feed-content">
+                <view class="answer-body">
+                    <view>
+                        <text class="answer-txt">我也觉得Kindle过呢更适合现代人，传统的纸质书用来收藏还不错，但是真要看起来，我选择Kindle，因为它更方便快捷，而且更多。</text>
+                    </view>
+                    <view class="answer-actions">
+                        <view class="like dot">
+                            <a>3.9K 赞同 </a>
+                        </view>
+                        <view class="comments dot">
+                            <a>254 评论 </a>
+                        </view>
+                        <view class="time">
+                            <a>2 个月前</a>
+                        </view>
+
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view  bindtap="bindItemTap" class="feed-item">
+            <view class="feed-source">
+                <a class="" bindTap="">
+                    <view class="avatar">
+                        <image src="https://wx.qlogo.cn/mmopen/vi_32/nGbZWVd7pZsrRHoWJuMrQC1icqA3ISKOxgibAlSbChom42meQySuDicGMmeDVB28yCpH42z0WjNvZDZuVYFP7rxicw/132"></image>
+                    </view>
+                    <text>Ender</text>
+                </a>
+            </view>
+            <view class="feed-content">
+                <view class="answer-body">
+                    <view>
+                        <text class="answer-txt">你们难道不知道kindle用多了肯定会对眼睛有一定副作用吗，我觉得传统的纸质书才更有书香气息，并且对身体更有益。 </text>
+                    </view>
+                    <view class="answer-actions">
+                        <view class="like dot">
+                            <a>3.9K 赞同 </a>
+                        </view>
+                        <view class="comments dot">
+                            <a>254 评论 </a>
+                        </view>
+                        <view class="time">
+                            <a>2 个月前</a>
+                        </view>
+
+                    </view>
+                </view>
+            </view>
+        </view>
+        <!-- <view  bindtap="bindItemTap" class="feed-item">
+            <view class="feed-source">
+                <a class="" bindTap="">
+                    <view class="avatar">
+                        <image src="cloud://uploadimage-60d0e7.7570-uploadimage-60d0e7/icon1.jpeg"></image>
+                    </view>
+                    <text>Rebecca</text>
+                </a>
+            </view>
+            <view class="feed-content">
+                <view class="answer-body">
+                    <view>
+                        <text class="answer-txt">难道不明白纸质书更贵啊！！！ 若觉得kindle更贵，我觉得要么阅读量太少，那确实没有买kindle的必要。要么买的都是盗版的纸质书？我不清楚不加以评论。。。 另外，用kindle看小说的... </text>
+                    </view>
+                    <view class="answer-actions">
+                        <view class="like dot">
+                            <a>3.9K 赞同 </a>
+                        </view>
+                        <view class="comments dot">
+                            <a>254 评论 </a>
+                        </view>
+                        <view class="time">
+                            <a>2 个月前</a>
+                        </view>
+
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view  bindtap="bindItemTap" class="feed-item">
+            <view class="feed-source">
+                <a class="" bindTap="">
+                    <view class="avatar">
+                        <image src="cloud://uploadimage-60d0e7.7570-uploadimage-60d0e7/icon1.jpeg"></image>
+                    </view>
+                    <text>Rebecca</text>
+                </a>
+            </view>
+            <view class="feed-content">
+                <view class="answer-body">
+                    <view>
+                        <text class="answer-txt">难道不明白纸质书更贵啊！！！ 若觉得kindle更贵，我觉得要么阅读量太少，那确实没有买kindle的必要。要么买的都是盗版的纸质书？我不清楚不加以评论。。。 另外，用kindle看小说的... </text>
+                    </view>
+                    <view class="answer-actions">
+                        <view class="like dot">
+                            <a>3.9K 赞同 </a>
+                        </view>
+                        <view class="comments dot">
+                            <a>254 评论 </a>
+                        </view>
+                        <view class="time">
+                            <a>2 个月前</a>
+                        </view>
+
+                    </view>
+                </view>
+            </view>
+        </view>-->
+
+
+
+    </view> 
+</view>
+

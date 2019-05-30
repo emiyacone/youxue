@@ -1,0 +1,15 @@
+
+<scroll-view scroll-y="true" class="container notify withtab" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  <view class="ctnt0" hidden="{{currentNavtab==0 ? '' : true}}">
+    <view class="notify-item flex-wrp" wx:for="{{tongzhis}}">
+      <view class="notify-content flex-item">
+        <text class="notify-source">考勤日期:{{item.title}}</text>
+        <view style='display:flex;'>
+        <text class="notify-title">实到人数：{{item.numbers}}</text>
+        <view class="notify-title" style='margin-left:30rpx'>应到人数：{{item.numbery}}</view>
+        </view>
+      </view>
+        <text class="notify-source1">{{item.time}}</text>
+    </view>
+  </view>
+</scroll-view>

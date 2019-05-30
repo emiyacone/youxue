@@ -1,0 +1,229 @@
+{
+	"description": "项目配置文件",
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"uglifyFileName": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.5.1",
+	"appid": "wx0ffc3b5c2c10bf87",
+	"projectname": "%E6%B8%B8%E5%AD%A6",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 25,
+			"list": [
+				{
+					"id": -1,
+					"name": "testquestionnaire",
+					"pathName": "pages/person/questionnaire/questionnaire",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "jwtz",
+					"pathName": "pages/person/jwtz/jwtz",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "课程表测试",
+					"pathName": "pages/person/lessons/kebiaochaxun ",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "课程表测试",
+					"pathName": "pages/person/lessons/lessons",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "222",
+					"pathName": "pages/courses/coursedetail/coursedetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "222",
+					"pathName": "pages/person/cjfx/cjfx",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "班级课程详情",
+					"pathName": "pages/courses/teachercourse/teachercourse",
+					"query": "name=JAVA基础&classcode=JCJAXA&cid=0",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "编辑班级课程",
+					"pathName": "pages/courses/course/course",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/person/person",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "成绩分析",
+					"pathName": "pages/person/cjfx/cjfx",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "学生",
+					"pathName": "pages/courses/teachercourse/students/students",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "课堂讨论",
+					"pathName": "pages/courses/teachercourse/ketangtaolun/ketangtaolun",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "免费课程",
+					"pathName": "pages/courses/freecourses/freecourses",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "课程资源",
+					"pathName": "pages/courses/teachercourse/kczy/kczy",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "在线练习",
+					"pathName": "pages/courses/teachercourse/zxlx/zxlx",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "上传文件",
+					"pathName": "pages/courses/teachercourse/webview/webview",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 16,
+					"name": "收藏的课程",
+					"pathName": "pages/person/collect/collect",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "考勤",
+					"pathName": "pages/person/kjjl/kjjl",
+					"query": "name=JAVA基础&classcode=JCJAXA&cid=0",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "abnjixuesheng",
+					"pathName": "pages/person/stu/stu",
+					"query": "name=JAVA基础&classcode=JCJAXA&cid=0",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "测试答题",
+					"pathName": "pages/courses/teachercourse/zxlx/test/test",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 20,
+					"name": "学生成绩分析",
+					"pathName": "pages/person/cjfx/teacjfx/teacjfx",
+					"query": "cid=0",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "直播",
+					"pathName": "pages/livecomera/livecomera",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人直播",
+					"pathName": "pages/livecomera/liveperson/liveperson",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "社区",
+					"pathName": "pages/shequ/shequ",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "shijian",
+					"pathName": "pages/courses/coursedetail/coursedetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "在线练习分析",
+					"pathName": "pages/person/zxlxfenxi/zxlxfenxi",
+					"scene": null
+				}
+			]
+		}
+	}
+}

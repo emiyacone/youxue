@@ -1,0 +1,23 @@
+/* pages/choose/choose.wxss */
+.circlech{
+  width:400rpx;
+  height:400rpx;
+  margin: 100rpx auto;
+  border-radius: 400rpx 400rpx 400rpx 400rpx;
+  display: flex;
+  background-color: #fda92c;
+}
+
+.textalig{
+  margin:auto auto;
+  font-size: 90rpx;
+  color:white;
+}
+
+.c1{
+    background-color: #fda92c;
+}
+
+.c2{
+    background-color: #fda92c;
+}

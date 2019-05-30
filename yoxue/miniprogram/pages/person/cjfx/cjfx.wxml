@@ -1,0 +1,18 @@
+<!-- <canvas canvas-id="first_canvas"
+bindtouchstart="onTouchStart" bindtouchmove="onTouchMove" bindtouchend="onTouchEnd" bindtouchcancel="onTouchCancel"
+style="height:300px;width:100%;border:0px solid #000;" >
+</canvas>
+<view class='title'>成绩分析</view>
+<view class='fenxi'>{{fenxi}}</view> -->
+<view class='total' style="background-image:url({{backurl}})" >
+<view class='top'>
+<picker value="{{index}}" range="{{array}}"bindchange="bindPickerChange1" range-key='name'>{{array[index].name}}</picker>
+</view>
+<view class='beny'>{{array[index].beny}}</view>
+<view class='paiming'>{{array[index].paiming}}</view>
+<view class='shans'>{{array[index].shans}}</view>
+<view class='score'>
+<text class='ctitle'>成绩分析</text>
+<text>{{array[index].cjfenxi}}</text>
+</view>
+</view>

@@ -1,0 +1,12 @@
+<view class="container chat">
+  <view class="chat-item flex-wrp" wx:for='{{students}}'>
+    <view class="avatar flex-item">
+      <image src="{{item.avatarurl}}"></image>
+    </view>
+    <view class="chat-content flex-item">
+      <view class="chat-source">
+        <text class="chatmate">{{item.nickName}}</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,25 @@
+<view class='top'>
+  <view class="date {{currentTab==index?'active': ''}}" wx:for='{{dates}}' data-id='{{index}}' bindtap='getindex'>
+    {{item}}</view>
+</view>
+<view class="chat-item flex-wrp" wx:for='{{students}}'>
+  <view class="avatar flex-item">
+    <image src="{{item.avatarurl}}"></image>
+  </view>
+  <view class="chat-content flex-item">
+    <view class="chat-source">
+      <text class="chatmate">{{item.time}}</text>
+    </view>
+    <view class="chat-source">
+      <text class="chatmate">{{item.coursetitle}}</text>
+    </view>
+    <view class="chat-source">
+      <text class="chatmate" style='color:#B9B9BA;font-size:30rpx;'>{{item.nickName}}</text>
+    </view>
+  </view>
+  <view class="chat-content2 flex-item">
+    <view class="chat-source">
+      <view style='margin-top:40rpx; '><button style='color:{{item.statecolor}};'type='{{item.type}}' size='mini' >{{item.state}}</button></view>
+      </view>
+    </view>
+  </view>

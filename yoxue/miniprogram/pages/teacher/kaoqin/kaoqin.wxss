@@ -1,0 +1,16 @@
+/* pages/teacher/kaoqin/kaoqin.wxss */
+.circlech{
+  width:400rpx;
+  height:400rpx;
+  margin: 100rpx auto;
+  border-radius: 400rpx 400rpx 400rpx 400rpx;
+  display: flex;
+  background-color: #2186E0;
+}
+
+
+.textalig{
+  margin:auto auto;
+  font-size: 90rpx;
+  color:white;
+}

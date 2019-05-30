@@ -1,0 +1,25 @@
+.total {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  background-size: 100%;
+  background-color: #dbdada;
+  background-repeat: no-repeat;
+  background-position: 0px -100px;
+}
+
+
+.main{
+    padding-top: 100rpx;
+  width:90%;
+  margin:90rpx 5%;
+  height:800rpx;
+  background-color: white;
+  border-radius: 10rpx 10rpx 10rpx 10rpx;
+  text-align: center;
+}
+
+.twocode{
+  width:600rpx;
+ height:600rpx;
+}

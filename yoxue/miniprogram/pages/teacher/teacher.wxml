@@ -1,0 +1,18 @@
+<view class='container'>
+<view class='circlech'bindtap='tendtotea'>
+<view class='textalig'>
+课程发布
+</view>
+</view>
+<view class='circlech c1' bindtap='kaoqin'>
+<view class='textalig'>
+考勤检查
+</view>
+</view>
+
+<view class='circlech c2' bindtap='tendtostu'>
+<view class='textalig'>
+我的
+</view>
+</view>
+</view>

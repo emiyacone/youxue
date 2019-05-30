@@ -1,0 +1,7 @@
+<!--pages/teacher/kaoqin/kaoqin.wxml-->
+<view class='circlech'>
+<view class='textalig'>开始考勤</view>
+</view>
+<view>请让学生们在2分钟内输入考勤码</view>
+<view>考勤码</view>
+<view>已考勤人数:</view>

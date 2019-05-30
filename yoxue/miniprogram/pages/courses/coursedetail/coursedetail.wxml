@@ -1,0 +1,117 @@
+<view class='container2'>
+  <view class="section tc">
+    <video class='myVideo' id="myVideo" src="{{videourl}}" danmu-list="{{danmuList}}" binderror="videoErrorCallback" custom-cache="{{false}}" enable-danmu danmu-btn controls></video>
+    <view class='top'>
+      <view class='topleft'>
+        <view class='title'>{{title}}</view>
+        <view class='price'>
+          <!-- <view class='nowprice'>
+            <text class='jiagefuhao'>￥</text>{{nowprice}}</view>
+          <view class='lastprice'>
+            <text class='jiagefuhao'>￥</text>{{lastprice}}</view> -->
+          <image src='../../images/download.png'></image>
+          <image src='../../images/shoucang.png'></image>
+        </view>
+      </view>
+      <view class='topright'>
+        <view class='person'>
+          <view class='headimage'>
+            <image src='{{headurl}}'></image>
+          </view>
+        </view>
+        <view class='teacher'>
+          <view class='teachername'>{{teachername}}</view>
+          <!-- <view class='teacherdetail'>讲师详情></view> -->
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='divline'></view>
+  <view class='navbar'>
+    <view class='bar' style='color:{{jiecolor}}' bindtap='jieshao'>课程介绍</view>
+         <view class='bar' style='color:{{shicolor}}' bindtap='jiangshi'>讲师详情</view>
+    <view class='bar' style='color:{{dacolor}}' bindtap='dagang'>课程大纲</view>
+    <view class='bar' style='color:{{pingcolor}}' bindtap='pingjia'>评价({{apprises.length}})</view>
+    <view class='div d1' style='display:{{jiehide}}'></view>
+    <view class='div d2' style='display:{{shihide}}'></view>
+    <view class='div d3' style='display:{{dahide}}'></view>
+     <view class='div d4' style='display:{{pinghide}}'></view>
+  </view>
+  <!-- 讲师介绍 -->
+    <view hidden='{{currentTab!=3}}'>
+    <scroll-view class='scrsty' scroll-y='true'>
+    <view class='aboutus'>
+      <text>{{t_introduction}} </text>
+    </view>
+        </scroll-view>
+  </view>
+  <!-- 课程介绍 -->
+  <view hidden='{{currentTab!=0}}'>
+    <view class='aboutus'>
+      <text>{{introduce}} </text>
+    </view>
+  </view>
+  <!-- 课程大纲 -->
+
+  <view hidden='{{currentTab!=1}}'>
+    <scroll-view class='scrsty' scroll-y='true'>
+      <view class='zjitem' wx:for='{{lessons}}' id='{{item.id}}' bindtap='lessondetail'>
+        <view class='zjtitle' style='color:{{item.chacolor}}'>{{item.chapter}}</view>
+         <view class='divline'> </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <!-- 评价 -->
+  <view hidden='{{currentTab!=2}}'>
+    <scroll-view class='scrsty' scroll-y='true'>
+      <view class='titlex'>评价该课程</view>
+      <view style='margin-left:155rpx;' bindtap='getmodel'>
+        <block wx:for="{{stars}}">
+          <image class="star-image" src="{{key > item ?(key-item == 0.5?halfSrc:selectedSrc) : normalSrc}}">
+            <view class="item" data-key="{{item+0.5}}" ></view>
+            <view class="item" style='margin-left:25rpx;' data-key="{{item+1}}" ></view>
+          </image>
+        </block>
+      </view>
+      <view class='jianyi'>您的宝贵评价，对我们非常重要哦~</view>
+      <view class='divline'> </view>
+      <view class='pingjia' wx:for='{{apprises}}'>
+        <view class='line1'>
+          <image class='headurl' src='{{item.headurl}}' />
+          <view class='middle'>
+          <view class='name'>{{item.name}}</view>
+            <view class='little'>学习了{{item.number}}</view>
+          </view>
+          <view class='pingfen'>
+          <view>{{item.pingfen}} 评分</view>
+            <view class='little'>{{item.time}}</view>
+          </view>
+        </view>
+        <view class='line2'>{{item.message}}</view>
+         <view class='divline'> </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+
+  <view class="bg" style='display:{{choosehide}}'></view>
+<view class="show" style='display:{{choosehide}}'>
+<view style='margin-top:5px'>
+ <block wx:for="{{stars}}">
+          <image class="star-image2" src="{{key > item ?(key-item == 0.5?halfSrc:selectedSrc) : normalSrc}}">
+            <view class="item2" data-key="{{item+0.5}}" bindtap="selectLeft"></view>
+            <view class="item2" style='margin-left:25rpx;' data-key="{{item+1}}" bindtap="selectRight"></view>
+          </image>
+        </block>
+        <view class='littile'>推荐，课程非常棒</view>
+        <textarea class='textarea1' placeholder='{{tishi}}' placeholder-class='littile' bindinput='getpingjia'></textarea>
+<view class='answer'>
+<view class='option1' bindtap='quxiao' >取消</view>
+<view class='option2' bindtap='tijiao'>提交</view>
+</view>
+
+</view>
+
+
+</view>

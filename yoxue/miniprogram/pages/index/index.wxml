@@ -1,0 +1,56 @@
+<swiper class='lunbo' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <navigator url="{{item.link}}" hover-class="navigator-hover">
+        <image src="{{item.url}}" class="slide-image" width="355" height="150" />
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='search'>
+  <image  src='{{searchurl}}'></image>
+  <input></input>
+</view>
+
+<view class='tips'>
+  <view class='tip' wx:for="{{tips}}">
+    <view class='tipimage' bindtap='{{item.tend}}'>
+      <image src='{{item.url}}'></image>
+    </view>
+    <view class='tiptext' bindtap='{{item.tend}}'>{{item.text}}</view>
+  </view>
+</view>
+<view class='divline'></view>
+
+<view class='livetv' bindtap='tolive'>
+  <view class='livetitle'>
+    <view class='livetext'>面对面授课</view>
+    <view class='more'>更多>></view>
+  </view>
+  <image src='{{liveimageurl}}'></image>
+</view>
+
+<view class='divline'></view>
+
+<view class='recommend'>
+  <view class='livetitle'>
+    <view class='livetext'>为您推荐</view>
+  </view>
+  <view class='recourses'>
+    <view class='course' wx:for="{{courses}}"   bindtap='{{item.coursedetail}}' id='{{item.id}}'>
+      <image src='{{item.imageurl}}'></image>
+      <view class='coursetitle'>{{item.title}}</view>
+      <view class='apprise'>
+        <view class='star'>
+          <image id='1' src='{{sstar1}}' ></image>
+          <image id='2' src='{{sstar2}}' ></image>
+          <image id='3' src='{{sstar3}}' ></image>
+          <image id='4' src='{{sstar4}}' ></image>
+          <image id='4' src='{{sstar5}}' ></image>
+        </view>
+        <text>{{item.star}}</text>
+        <text class='personnum'>{{item.personnum}}人学过</text></view>
+      <view class='price'></view>
+    </view>
+  </view>
+</view>

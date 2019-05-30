@@ -1,0 +1,331 @@
+
+page{
+  height: 100%;
+}
+
+.section{
+  width:100%;
+}
+
+.myVideo{
+  width:100%;
+  height:400rpx;
+}
+
+.top{
+  width:100%;
+  display:flex;
+}
+
+.topleft{
+  width:60%;
+}
+
+.topright{
+  width:40%;
+  display: flex;
+}
+
+.title{
+  width:95%;
+  margin:14rpx 5%;
+  font-weight: bold;
+  font-size: 40rpx;
+}
+
+.jiagefuhao{
+font-size: 30rpx;
+}
+
+.price{
+  display: flex;
+    width:90%;
+  height:50rpx;
+  margin:14rpx 3%;
+  font-size: 35rpx;
+}
+.nowprice{
+color:red;
+}
+
+.lastprice
+{
+color:#dadada;
+font-size: 30rpx;
+margin:10rpx 15rpx;
+text-decoration:line-through;
+}
+
+.price image
+{
+  height:40rpx;
+  width:40rpx;
+  margin:5rpx 15rpx;
+}
+
+.headimage {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 70rpx 70rpx 70rpx 70rpx;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  background-color: white;
+}
+
+
+.headimage image {
+  width: 105rpx;
+  height: 105rpx;
+  margin: -10rpx -10rpx;
+   border-radius: 70rpx 70rpx 70rpx 70rpx;
+}
+
+.edit {
+  margin: 0px 14px;
+  width: 23px;
+  height: 23px;
+}
+
+.teacher
+{
+  width:50%;
+}
+.teachername
+{
+  width:100%;
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-top: 30rpx;
+  margin-left: 7rpx;
+   text-align: center;
+}
+.teacherdetail
+{
+  width:100%;
+   font-size: 28rpx;
+     margin-left: 14rpx;
+     text-align: center;
+     color:#808080;
+}
+
+.divline {
+  width: 100%;
+  height: 6rpx;
+  background-color: #f8f8f8;
+}
+
+.navbar{
+  width:100%;
+  display: flex;
+  border-bottom: 1px solid #e9e9e9;
+     flex-wrap: wrap;
+}
+
+.bar{
+  font-size: 35rpx;
+  width:45%;
+  margin:30rpx 2.5%;
+  text-align: center;
+
+}
+
+.div{
+  width:8%;
+  height:8rpx;
+  margin-left: 8%;
+   background-color: #a9b314;
+   border-radius: 4rpx 4rpx 4rpx 4rpx;
+   border:1rpx solid #e3b942;
+}
+
+.d2{
+  margin-left:21%;
+}
+
+.d3{
+  margin-left:58%;
+}
+
+.d4{
+  margin-left:71%;
+}
+
+.aboutus
+{
+  width:90%;
+  margin:15rpx 50rpx;
+  line-height: 59rpx;
+  font-size: 32rpx;
+  text-indent:2em;
+    text-align: left;
+    letter-spacing:5rpx;
+}
+.zjitem{
+  width:100%;
+}
+.zjtitle{
+    font-size: 30rpx;
+    margin:30rpx 100rpx;
+}
+
+.container2{
+  height:100vh;
+  overflow: hidden;
+}
+
+.scrsty{
+  height:45vh;
+}
+
+.star-image{
+  margin: 20rpx 20rpx;
+  width:50rpx;
+  height:50rpx;
+  /* margin:20rpx 20rpx; */
+  /* src: "cloud://uploadimage-60d0e7.7570-uploadimage-60d0e7/normal.png"; */
+}
+.item{
+  margin-top: -50rpx;
+   width:25rpx;
+  height:50rpx;
+}
+
+.titlex{
+  width:100%;
+  margin:10rpx 20rpx;
+  font-size: 30rpx;
+}
+
+.jianyi{
+  width:100%;
+  font-size: 30rpx;
+  text-align: center;
+  margin-bottom: 20rpx;
+}
+
+.pingjia{
+  width: 100%;
+  margin:30rpx 40rpx;
+  margin-bottom: 50rpx;
+}
+
+.line1{
+  display: flex;
+  margin: 10rpx 0rpx;
+}
+
+.headurl{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 70rpx 70rpx 70rpx 70rpx;
+}
+
+.middle{
+  width:60%;
+  font-size: 30rpx;
+  margin: 0rpx 30rpx
+}
+
+.name{
+  font-weight: bold;
+}
+
+.line2{
+  width:100%;
+  margin:10rpx 20rpx;
+  margin-left: 90rpx;
+  font-size: 30rpx;
+  margin-bottom: 40rpx;
+}
+
+.divline {
+  width: 100%;
+  height: 3rpx;
+ margin-bottom: 20rpx;
+  background-color: #dbdada;
+}
+
+.pingfen{
+    font-size: 30rpx;
+}
+
+.little{
+  font-size: 25rpx;
+  color: #B5BABF;
+  margin: 10rpx 0rpx;
+  margin-bottom: 18rpx;
+}
+
+.bg {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.7;
+  opacity: 0.70;
+  filter: alpha(opacity=70);
+}
+
+.show {
+    border-radius: 10px 10px 10px 10px;
+  display: none;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 53%;
+  padding: 8px;
+  border: 8px solid #e8e9f7;
+  background-color: white;
+  z-index: 1002;
+  overflow: auto;
+  text-align: center
+}
+
+.textarea1{
+  width:100%;
+  height:200rpx;
+  background-color: #F6F6F6;
+  font-size: 30rpx;
+}
+
+.answer{
+  height:100rpx;
+  display: flex;
+}
+
+.option1{
+  width:50%;
+  margin: auto 0rpx;
+  font-size: 30rpx;
+}
+
+.option2{
+  width:50%;
+  margin: auto 0rpx;
+  color:red;
+    font-size: 30rpx;
+
+}
+
+.star-image2{
+  margin: 10rpx 10rpx;
+  width:50rpx;
+  height:50rpx;
+  /* margin:20rpx 20rpx; */
+  /* src: "cloud://uploadimage-60d0e7.7570-uploadimage-60d0e7/normal.png"; */
+}
+.item2{
+  margin-top: -50rpx;
+   width:25rpx;
+  height:50rpx;
+}
+
+.littile{
+  font-size: 30rpx;
+  margin: 20rpx 0rpx;
+}

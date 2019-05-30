@@ -1,0 +1,13 @@
+<view class='total'>
+<view class='title'>
+<view class='taol'>{{title}}</view>
+</view>
+<view class='questionitem' wx:for='{{question}}' wx:for-item="item">
+<view class='question'>{{item.question}}</view>
+<view wx:for='{{item.options}}' wx:for-item="option" class='option'>
+<view>{{option.mess}}</view>
+<progress percent='{{option.percent}}' show-info></progress>
+</view>
+</view>
+</view>
+

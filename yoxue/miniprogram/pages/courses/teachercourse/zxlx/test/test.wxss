@@ -1,0 +1,20 @@
+/* pages/test/test.wxss */
+.page__hd{
+  width: 100%;
+  margin:50rpx 10rpx;
+}
+
+.weui-cell_active{
+  background-color: #d97b3d;
+}
+
+.weui-cell {
+  padding: 10px 15px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}

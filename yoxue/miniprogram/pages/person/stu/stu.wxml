@@ -1,0 +1,5 @@
+<view class='total'>
+<view class='courses' wx:for='{{courses}}' bindtap='{{item.coursedetail}}' id='{{item.cid}}'>
+<view class='courseitem'>{{item.name}}</view>
+</view>
+</view>

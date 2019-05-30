@@ -1,0 +1,61 @@
+.total {
+  width: 100%;
+  height: 100vh;
+    background: #F4F4F4;
+      display: flex;
+  flex-direction: column;
+}
+
+.lianxi{
+  width: 92%;
+  margin:20rpx 4%;
+   border-radius: 10rpx 10rpx 10rpx 10rpx;
+   background-color: white;
+   display: flex;
+}
+
+.quesnumber{
+  width:22%;
+  margin:30rpx 10rpx;
+  text-align: center;
+}
+
+.num{
+  font-size: 50rpx;
+  font-weight: bold;
+}
+
+.numti{
+  font-size: 20rpx;
+  color: #C6C6C6;
+}
+
+.shu{
+  height:60rpx;
+  width: 1rpx;
+  margin:50rpx 0rpx;
+  background-color: #b3b3b3;
+  opacity: 0.3
+}
+
+.quesmess{
+    width:60%;
+  margin:40rpx 30rpx;
+}
+
+.messtit{
+font-size: 30rpx;
+}
+
+.time{
+    font-size: 23rpx;
+  color: #C6C6C6;
+  margin-top: 17rpx;
+}
+
+.jiantou{
+  width: 10%;
+  margin:50rpx 10rpx;
+  color: #C6C6C6;
+  font-style:initial;
+}

@@ -1,0 +1,90 @@
+{
+  "pages": [
+    "pages/choose/choose",
+    "pages/index/index",
+    "pages/person/lessons/lessons",
+    "pages/courses/course/course",
+    "pages/VIP/VIP",
+    "pages/twocode/twocode",
+    "pages/courses/coursedetail/coursedetail",
+    "pages/courses/courses",
+    "pages/person/aboutus/aboutus",
+    "pages/person/person",
+    "pages/logs/logs",
+    "pages/service/service",
+    "pages/person/dcwj/dcwj",
+    "pages/person/questionnaire/questionnaire",
+    "pages/shequ/shequ",
+    "pages/shequ/answer/answer",
+    "pages/shequ/question/question",
+    "pages/person/ksap/ksap",
+    "pages/person/jwtz/jwtz",
+    "pages/person/cjfx/cjfx",
+    "pages/teacher/teacher",
+    "pages/teacher/kaoqin/kaoqin",
+    "pages/teacher/applycour/applycour",
+    "pages/teacher/aboutme/aboutme",
+    "pages/person/lessons/kebiaochaxun ",
+    "pages/courses/teachercourse/teachercourse",
+    "pages/courses/teachercourse/students/students",
+    "pages/courses/teachercourse/ketangtaolun/ketangtaolun",
+    "pages/courses/freecourses/freecourses",
+    "pages/courses/vipcourses/vipcourses",
+    "pages/courses/teachercourse/kczy/kczy",
+    "pages/courses/teachercourse/zxlx/zxlx",
+    "pages/courses/teachercourse/webview/webview",
+    "pages/person/collect/collect",
+    "pages/person/kjjl/kjjl",
+    "pages/person/tpjl/tpjl",
+    "pages/person/stu/stu",
+    "pages/courses/teachercourse/zxlx/test/test",
+    "pages/person/cjfx/teacjfx/teacjfx",
+    "pages/person/cjfx/students/students",
+    "pages/livecomera/livecomera",
+    "pages/livecomera/liveperson/liveperson",
+    "pages/person/zxlxfenxi/zxlxfenxi",
+    "pages/person/zxlxfenxi/zxlx/zxlx"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d97b3d",
+    "navigationBarTitleText": "游学教育",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#ddd",
+    "backgroundColor": "#fff",
+    "selectedColor": "#000",
+    "borderStyle": "white",
+    "list": [
+      {
+        "color": "#000",
+        "selectedIconPath": "pages/images/首页.png",
+        "iconPath": "pages/images/首页（灰）.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "color": "#000",
+        "selectedIconPath": "pages/images/课程.png",
+        "iconPath": "pages/images/课程（灰）.png",
+        "pagePath": "pages/courses/course/course",
+        "text": "课程"
+      },
+      {
+        "color": "#000",
+        "selectedIconPath": "pages/images/社区.png",
+        "iconPath": "pages/images/社区（灰）.png",
+        "pagePath": "pages/shequ/shequ",
+        "text": "讨论"
+      },
+      {
+        "color": "#000",
+        "selectedIconPath": "pages/images/我的.png",
+        "iconPath": "pages/images/我的（灰）.png",
+        "pagePath": "pages/person/person",
+        "text": "我的"
+      }
+    ]
+  }
+}

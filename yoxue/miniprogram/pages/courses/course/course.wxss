@@ -1,0 +1,205 @@
+.total {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  background-size: 100%;
+  background-color: #dbdada;
+  background-repeat: no-repeat;
+  background-position: 0px -100px;
+      overflow: hidden;
+}
+
+.recourses {
+  width: 95%;
+  margin: 30rpx 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #dbdada;
+  border-radius: 10rpx 10rpx 10rpx 10rpx;
+  margin-top: 55rpx;
+
+}
+.numbers{
+  display: flex;
+    margin-left: 270rpx;
+}
+.show {
+    border-radius: 5rpx 5rpx 5rpx 5rpx;
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 13%;
+  width: 70%;
+  padding: 8px;
+  /* border: 8px solid #e8e9f7; */
+  background-color: white;
+  z-index: 1002;
+  overflow: auto;
+  text-align: center;
+}
+
+.bg {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.7;
+  opacity: 0.70;
+  filter: alpha(opacity=70);
+}
+
+.editm{
+  width:130rpx;
+  /* background-color:#D97B3D ; */
+  margin:30rpx 20rpx;
+  color: #D97B3D;
+  font-size: 30rpx;
+  float: right;
+}
+
+.showinput{
+  width:60%;
+  float: left;
+  margin:40rpx 0rpx;
+}
+
+.bt_j{
+  margin-top: 20rpx;
+}
+
+.course {
+  width: 49%;
+  height: 300rpx;
+  margin-top: 15rpx;
+  background-color: white;
+  margin-left:1%;
+  border-radius: 5rpx 5rpx 5rpx 5rpx;
+  padding-bottom: 20rpx;
+}
+
+.course image {
+  width: 90%;
+  margin: 7px 5%;
+  border-radius: 5px 5px 5px 5px;
+  height: 190rpx;
+  border-top: 1rpx solid #ebebeb;
+  box-shadow: 0px 2px 2px 2px #ebebeb;
+}
+
+.coursetitle {
+  width: 90%;
+  margin-top: 0rpx;
+  margin-left: 5%;
+  font-size: 28rpx;
+}
+
+.apprise {
+  width: 90%;
+  margin: 0px 5%;
+  font-size: 13px;
+  display: flex;
+  color: #8d8d8d;
+}
+
+.personnum {
+  width: 70%;
+  margin-left: 12px;
+}
+
+.price {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 0px;
+  margin-bottom: 10rpx;
+  font-size: 28rpx;
+}
+.course1 {
+  width: 98%;
+  margin:0rpx 1%;
+  height: 230rpx;
+  margin-top: 15rpx;
+  display: flex;
+  border-radius: 10rpx 10rpx 10rpx 10rpx;
+  background-color: white;
+}
+.course1 image {
+  width: 250rpx;
+  margin: 7px 5%;
+  border-radius: 5px 5px 5px 5px;
+  height: 190rpx;
+  border-top: 1rpx solid #ebebeb;
+  box-shadow: 0px 2px 2px 2px #ebebeb;
+}
+.coursetitle1 {
+  width: 300rpx;
+  margin-top: 55rpx;
+  margin-left: 5%;
+  font-size: 33rpx;
+}
+.price1 {
+  width: 250rpx;
+  margin-left: 5%;
+  margin-top: 30rpx;
+  margin-bottom: 10rpx;
+  font-size: 28rpx;
+  color:#b3b3b3;
+}
+.types {
+  width: 100%;
+  display: flex;
+  border-radius: 10rpx 10rpx 10rpx 10rpx;
+  margin-bottom: 0rpx;
+}
+
+.classcourse {
+  width: 50%;
+  height: 90rpx;
+  text-align: center;
+  font-size: 30rpx;
+  display: flex;
+   border-radius: 10rpx 0rpx 0rpx 10rpx;
+}
+
+.onlinecourse {
+  width: 50%;
+  height: 90rpx;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 30rpx;
+  display: flex;
+    border-radius: 0rpx 10rpx 10rpx 0rpx;
+}
+
+.title {
+  width: 100%;
+  margin: auto 0rpx;
+}
+
+.pagesdiv {
+  height: 60rpx;
+  width: 100%;
+  display: flex;
+  font-size: 28rpx;
+  margin-bottom: 40rpx;
+  margin-top: 40rpx;
+}
+
+.pagenumber {
+  height: 40rpx;
+  width: 40rpx;
+  border: 1px solid #b4b4b4;
+  border-radius: 5rpx 5rpx 5rpx 5rpx;
+  text-align: center;
+  margin-top: 10rpx;
+
+  margin-right: 10rpx;
+}
+
+.next {
+  margin: 10rpx 10rpx;
+}

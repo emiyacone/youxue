@@ -1,0 +1,11 @@
+
+<scroll-view scroll-y="true" class="container notify withtab" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  <view class="ctnt0" hidden="{{currentNavtab==0 ? '' : true}}">
+    <view class="notify-item flex-wrp" wx:for="{{tongzhis}}">
+      <view class="notify-content flex-item">
+        <text class="notify-source">{{item.title}}</text>
+        <text class="notify-title">{{item.message}}</text>
+      </view>
+    </view>
+  </view>
+</scroll-view>

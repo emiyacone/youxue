@@ -1,0 +1,11 @@
+<view class='total'>
+  <view class='course1' wx:for="{{courses}}" id='{{item.cid}}'hidden='{{classhide}}' bindtap='{{item.coursedetail}}'>
+      <image src='{{item.imageurl}}'></image>
+      <view>
+      <view class='coursetitle1'>{{item.name}}</view>
+     <progress class='jindut' percent='{{item.percent}}' show-info></progress>
+      </view>
+          <button class='continue'>继续学习</button>
+    </view>
+
+</view>

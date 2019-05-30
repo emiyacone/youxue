@@ -1,0 +1,74 @@
+<!--pages/person/person.wxml-->
+<view class='total' style="background-image:url({{backurl}})" >
+  <view class='person'>
+    <view class='headimage'>
+      <image src='{{userInfo.avatarUrl}}'></image>
+    </view>
+    <view class='student'>
+      <view class='name'>{{userInfo.nickName}}
+        <image class='edit' src='cloud://uploadimage-60d0e7.7570-uploadimage-60d0e7/edit.png' bindtap='edit'></image>
+      </view>
+      <view class='role'>{{type}}</view>
+    </view>
+  </view>
+  <!-- 已学课程信息 -->
+  <view class='coursemess'>
+    <view class='coursemain'>
+      <view class='coursenum'>
+        <view class='num'>
+          <view class='numtitle'>{{today1}}</view>
+          <view class='numsize'>{{coursenum}}<text class='size'>分钟</text></view>
+        </view>
+        <view class='num'>
+          <view class='numtitle'>{{today2}}</view>
+          <view class='numsize'>{{tickets}}<text class='size'>天</text></view>
+        </view>
+          <view class='num'>
+          <view class='numtitle'>{{today3}}</view>
+          <view class='numsize'>{{hours}}<text class='size'>小时</text></view>
+        </view>
+      </view>
+
+
+    </view>
+  </view>
+
+  <!-- 我的课程 -->
+  <view class='mycourse'>
+  <view class='livetitle'>
+    <view class='livetext'>我的课程</view>
+  </view>
+    <view class='cmain'>
+     <view class='tipcontain' wx:for="{{tips}}">
+      <button open-type="{{item.buttontype}}" bindtap='{{item.tend}}'>
+       <image class='tipimage' src='{{item.url}}'></image>
+      <view>{{item.name}}</view>
+      </button>
+      </view>
+    <view></view>
+    </view>
+  </view>
+  <!-- 
+更多功能 -->
+  <view class='more'>
+<view class='livetitle'>
+    <view class='livetext'>更多功能</view>
+  </view>
+    <view class='cmain'>
+  
+     <view class='tipcontain' wx:for="{{funs}}" >
+        <button open-type="{{item.buttontype}}" bindtap='{{item.tend}}'>
+       <image class='tipimage' src='{{item.url}}'></image>
+      <view >{{item.name}}</view>
+      </button>
+      </view>
+      
+    </view>
+  </view>
+</view>
+
+<view class="bg" style='display:{{choosehide}}' bindtap='changebackground'></view>
+<view class="show" style='display:{{choosehide}}'>
+<input placeholder='{{userInfo.nickName}}' bindinput='getusname'></input>
+<button class='editm' bindtap='editm'>修改</button>
+</view>

@@ -1,0 +1,19 @@
+<!-- 左侧滚动栏 -->
+<view class='under_line'></view>
+<view style='float: left' class='left'>
+  <scroll-view scroll-y scroll-with-animation scroll-left="{{scrollLength}}" class='scrollY' style='height: {{winHeight}}px'>
+    <view class='all clear'>
+      <block wx:key="lists" wx:for="{{lists}}">
+        <view bindtap='jumpIndex' data-menuindex='{{index}}'>
+          <view class='text-style'>
+            <image class='head' src='{{item.avatarurl}}'></image>
+            <text class="{{indexId==index?'active1':''}}" style='  text-overflow: ellipsis;'>{{item.nickName}}</text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+  <view style='height: {{winHeight}}px;' class='right'>
+  <image class='cjfxright' src='{{backurl}}' style='height: {{winHeight}}px;'></image>
+  </view>
+</view>

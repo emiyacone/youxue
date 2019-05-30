@@ -1,0 +1,33 @@
+<view class='total'>
+<view class='lianxi' wx:for='{{lianxis}}' hidden='{{teacherhide}}' bindtap='{{item.btap}}'>
+<view class='quesnumber'> 
+<view class='num'>{{item.number}}</view>
+<view class='numti'>总问题数</view>
+</view>
+<view class='shu'></view>
+<view class='quesmess'> 
+<view class='messtit'>{{item.title}}</view>
+<view class='time'>{{item.time}}</view>
+</view>
+<view class='jiantou'>></view>
+</view>
+
+
+<view class='ziyuan' wx:for='{{ziyuans}}' hidden='{{studenthide}}' bindtap='getmoban'>
+<view class='contain'>
+<image class='tupian' src='{{item.background}}'>
+</image>
+<view class='title'>{{item.title}}</view>
+<view class='neirong'>
+<view class='name'>{{item.name}}</view>
+<view class='time2'>
+<text class='sctime'>上传时间:</text>
+<text class='xstime'>{{item.time}}</text>
+</view>
+</view>
+<view class='tips'>{{item.tips}}</view>
+</view>
+</view>
+</view>
+
+<view class='plusview'  bindtap='uploadfile' hidden='{{studenthide}}'><image class='plus' src='{{plus}}'></image></view>

@@ -1,0 +1,206 @@
+<!--pages/courses/teachercourse/teachercourse.wxml-->
+<view class='total'>
+<view class='course' style="background-image:url({{backurl}})">
+<view class='coursenname'>课程名:{{coursename}}</view>
+<view class='coursecode'>课程码:{{coursecode}}</view>
+</view>
+<view class='tongzhi'>
+<image src='{{labaurl}}'></image>
+<view class='tongtext'>最新公告可以在这里实时显示通知</view>
+</view>
+
+<view class='func_box'>
+
+<view class='function' bindtap='kqdk'>
+<view ><image class='fimage' src='{{imageurl}}'></image></view>
+<view class='xinxi'>
+<view class='ftitle'>考勤打卡</view>
+<view class='ftip'>极速考勤打卡</view>
+</view>
+</view>
+
+<view class='shu'></view>
+
+<view class='function' bindtap='kczy'>
+<view ><image class='fimage' src='{{image1url}}'></image></view>
+<view class='xinxi'>
+<view class='ftitle'>课程资源</view>
+<view class='ftip'>PPT等资源下载</view>
+</view>
+</view>
+
+
+<view class='function'bindtap='kczb'>
+<view ><image class='fimage' src='{{image2url}}' ></image></view>
+<view class='xinxi'>
+<view class='ftitle'>在线直播</view>
+<view class='ftip'>远程在线授课</view>
+</view>
+</view>
+
+<view class='shu'></view>
+
+<view class='function' bindtap='tzgg'>
+<view ><image class='fimage' src='{{image3url}}'></image></view>
+<view class='red' hidden='{{tgisread}}'></view>
+<view class='xinxi'>
+<view class='ftitle'>通知公告</view>
+<view class='ftip'>查看最新消息</view>
+</view>
+</view>
+</view>
+
+<view class='divline'></view>
+
+<view class='func_box'style='margin-top:0rpx;border-top:1rpx solid #fff;'>
+
+<view class='function' style='border-top:1rpx solid #fff;' bindtap='bjxs'>
+<view ><image class='fimage' src='{{image4url}}'></image></view>
+<view class='xinxi'>
+<view class='ftitle'>班级学生</view>
+<view class='ftip'>查看所有学生</view>
+</view>
+</view>
+
+<view class='shu'></view>
+
+<view class='function'  style='border-top:1rpx solid #fff;' bindtap='zxlx'>
+<view ><image class='fimage' src='{{image5url}}'></image></view>
+<view class='xinxi'>
+<view class='ftitle'>在线练习</view>
+<view class='ftip'>学习情况检查</view>
+</view>
+</view>
+
+
+<view class='function' style='margin-top:0rpx;' bindtap='kttw'>
+<view ><image class='fimage' src='{{image6url}}'></image></view>
+<view class='xinxi'>
+<view class='ftitle'>课堂提问</view>
+<view class='ftip'>随机点名提问</view>
+</view>
+</view>
+
+<view class='shu'></view>
+
+<view class='function' bindtap='taolunqun'>
+<view ><image class='fimage' src='{{image7url}}'></image></view>
+<view class='xinxi'>
+<view class='ftitle'>课堂讨论</view>
+<view class='ftip'>班级讨论空间</view>
+</view>
+</view>
+</view>
+
+<view class='divline'></view>
+
+<view class='func_box'style='margin-top:0rpx;border-top:1rpx solid #fff;'>
+
+<view class='function' style='border-top:1rpx solid #fff;' bindtap='showpingjia'>
+<view ><image class='fimage' src='{{image8url}}'></image></view>
+<view class='xinxi'>
+<view class='ftitle'>教学评价</view>
+<view class='ftip'>教师与学生互评</view>
+</view>
+</view>
+
+<view class='shu'></view>
+
+<view class='function'  style='border-top:1rpx solid #fff;' bindtap='toupiao'>
+<view ><image class='fimage' src='{{image9url}}'></image></view>
+<view class='xinxi'>
+<view class='ftitle'>投票</view>
+<view class='ftip'>统计意见</view>
+</view>
+</view>
+</view>
+<view class='endline'></view>
+</view>
+
+<view class="bg" style='display:{{choosehide}}' bindtap='changebackground'></view>
+<view class="show" style='display:{{choosehide}}'>
+<input class='showinput' placeholder='{{kqm}}' bindinput='getcode'></input>
+<button class='editm' bindtap='{{qiandao}}'>{{action}}</button>
+</view>
+
+<view class="bg" style='display:{{tzgghide}}' bindtap='changebackground'></view>
+<view class="show2" style='display:{{tzgghide}};background-image:url({{tzbackurl}})'>
+<input class='tzshowinput' placeholder='{{tzbt}}' bindinput='tztitle' disabled='{{tzkk}}'></input>
+<textarea class='neirong' placeholder='{{tznr}}' bindinput='tzmess' disabled='{{tzkk}}'></textarea>
+<button class='editm3' bindtap='tzok' hidden='{{tzhide}}'>{{action}}</button>
+</view>
+
+<view class="bg" style='display:{{kttwhide}}' bindtap='changebackground'></view>
+<view class="show" style='display:{{kttwhide}}' >
+<view class='showinput2'>班级人数{{classnumber}}</view>
+<view class='showinput2'>答题人数:{{datinumber}}</view>
+<button class='editm3' bindtap='tiwen'>{{action}}</button>
+</view>
+
+
+<view class="bg" style='display:{{tiwenhide}}' bindtap='changebackground'></view>
+<view class="show" style='display:{{tiwenhide}}'>
+<view class='showinput3'>{{number}}</view>
+</view>
+
+
+<view class="bg" style='display:{{ktswhide}}' bindtap='changebackground'></view>
+<view class="show" style='display:{{ktswhide}}'>
+<view class='showinput2'>暂无提问</view>
+<button class='editm3' bindtap='changebackground'>返回</button>
+</view>
+
+
+  <view class="bg" style='display:{{ktpjhide}}' bindtap='changebackground'></view>
+<view class="show" style='display:{{ktpjhide}}'>
+<view style='margin-top:5px'>
+ <block wx:for="{{stars}}">
+          <image class="star-image2" src="{{key > item ?(key-item == 0.5?halfSrc:selectedSrc) : normalSrc}}">
+            <view class="item2" data-key="{{item+0.5}}" bindtap="selectLeft"></view>
+            <view class="item2" style='margin-left:25rpx;' data-key="{{item+1}}" bindtap="selectRight"></view>
+          </image>
+        </block>
+        <view class='littile'>推荐，课程非常棒</view>
+        <textarea class='textarea1' placeholder='{{tishi}}' placeholder-class='littile' bindinput='getpingjia'></textarea>
+<view class='answer'>
+<view class='option1' bindtap='quxiao' >取消</view>
+<view class='option2' bindtap='quxiao'>提交</view>
+</view>
+</view>
+</view>
+
+
+<view class="bg" style='display:{{toupiaohide}}' bindtap='changebackground'></view>
+<view class="show2" style='display:{{toupiaohide}};background-image:url({{tzbackurl}})'>
+<input class='tzshowinput' placeholder='{{nameticket}}' bindinput='getvotetitle'></input>
+<input class='timeinout' placeholder='{{timejiezhi}}' bindinput='votetimeout'></input>
+<view  class='showinput4'>
+<view class='xuanx'>
+<view style='margin-bottom:30rpx;' wx:for='{{options}}'>
+<input  placeholder='{{item.option}}{{item.x}}'style='background-color:#ffffff'  id='{{item.id}}' bindinput='getoption'></input>
+</view>
+</view>
+<view class='circle' bindtap='addoption'>
+<view class='choose'>+</view></view>
+<view class='circle'bindtap='removeoption' ><view class='choose'>-</view></view>
+</view>
+<button class='editm3' bindtap='qoption'>确认</button>
+
+
+</view>
+<view class="bg" style='display:{{stuhide}}' bindtap='changebackground'></view>
+<view class="show2" style='display:{{stuhide}};background-image:url({{tzbackurl}})'>
+<input class='tzshowinput' placeholder='{{nameticket}}' bindinput='getusname'disabled='{{studentway}}'></input>
+<!-- <input class='showinput2' placeholder='{{timejiezhi}}' bindinput='getusname'></input> -->
+<view  class='showinput4'>
+<view>
+<radio-group>
+<view style='height:70rpx' wx:for='{{options}}'>
+<input disabled='{{studentway}}' class='opinoput' style='float:left' placeholder='{{item.option}}{{item.x}}'  id='{{item.id}}' bindinput='takeinput' ></input>
+<radio style='float:right' id='{{item.id}}' bindtap='bindchange'></radio>
+</view>
+</radio-group>
+</view>
+</view>
+<button class='editm3' bindtap='stutou'>确认</button>
+</view>
